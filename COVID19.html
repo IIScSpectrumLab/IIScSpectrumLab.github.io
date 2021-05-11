@@ -90,8 +90,17 @@
         <p></p>
         <form action="COVID19.html" method="POST" enctype="multipart/form-data">
           <label>Enter Patient ID:</label>
-          <input type="string" name="p_id"><br><br>
-          <!-- <label for ='file'>Select file:</label> -->
+          <input type="string" name="p_id"> &emsp;
+          <label for="models">Choose a model:</label>
+          <select name="models" id="models">
+            <option value="attentionunet">Attention U-Net</option>
+            <option value="densenet">DenseNet</option>
+            <option value="redrcnn">RED-RCNN</option>
+            <option value="resnet">ResNet</option>
+            <option value="resunetplus">ResUNet Plus</option>
+            <option value="unet">UNet</option>
+          </select>
+          <br><br>
           <label for="file" class="custom-file-upload">
           <i class="fa fa-cloud-upload"></i> Upload File
           </label>
@@ -99,8 +108,6 @@
           <input class="input2" type="submit" value="Process File" name="submit"><br>
         </form>
         <p style="margin-bottom:2cm;"> </p>
-
-
       </div> 
     </section>
     
